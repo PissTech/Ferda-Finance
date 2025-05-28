@@ -59,8 +59,8 @@
 
   async function fetchStockData(ticker) {
     try {
-      const quoteRes = await fetch(`https://finnhub.io/api/v1/quote?symbol=${ticker}&token=${d0r78bpr01qn4tjgtgpgd0r78bpr01qn4tjgtgq0}`);
-      const ratingRes = await fetch(`https://finnhub.io/api/v1/stock/recommendation?symbol=${ticker}&token=${d0r78bpr01qn4tjgtgpgd0r78bpr01qn4tjgtgq0}`);
+      const quoteRes = await fetch(`https://finnhub.io/api/v1/quote?symbol=${ticker}&token=${apikey}`);
+      const ratingRes = await fetch(`https://finnhub.io/api/v1/stock/recommendation?symbol=${ticker}&token=${apikey}`);
 
       const quote = await quoteRes.json();
       const ratings = await ratingRes.json();
