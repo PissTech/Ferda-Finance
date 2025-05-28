@@ -1,47 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ferda Finance">
-    <title>Ferda's Webpage</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Add your stylesheet link if any -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Bumbera | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #1e2a38;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .projects, .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      flex: 1 1 45%;
+      min-width: 250px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      background-color: #1e2a38;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1e2a38;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Ferda Finance</h1><hr>
-        <p>Show Me the Money!</p>
-    </header>
 
-<img src="Mystic Pizza - EDITED.jpg" alt="Mystic Pizza" style="width: 30%; height: auto; float: right;">
+  <header>
+    <h1>John Bumbera</h1>
+    <p>Mechanical Engineering Student | Missouri S&T</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>COMING SOON!</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm John Bumbera, a passionate Mechanical Engineering student at Missouri University of Science and Technology. I enjoy working on innovative projects that combine design, analysis, and practical problem-solving.</p>
+  </section>
 
-    <section id="services">
-        <h2>Available Services</h2>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Autonomous Robot Design</h3>
+        <p>Designed and built a robot capable of navigating obstacles using Arduino and ultrasonic sensors.</p>
+        <a href="#">View on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>3D Printed Drone Frame</h3>
+        <p>Engineered a lightweight, durable drone frame using CAD and additive manufacturing.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <h4>Technical</h4>
         <ul>
-            <li>IT Solutions & Web Development</li>
-            <li>Pictures</li>
-            <li>Innovative Manufacturing</li>
+          <li>SolidWorks, AutoCAD</li>
+          <li>MATLAB, Python</li>
+          <li>3D Printing, Arduino</li>
         </ul>
-    </section>
+      </div>
+      <div class="card">
+        <h4>Professional</h4>
+        <ul>
+          <li>Project Management</li>
+          <li>Team Collaboration</li>
+          <li>Analytical Thinking</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <section id="How to Order">
-        <h2>How to Order</h2><hr>
-        <p>Feel free to Call Ferd. Here's how:</p>
-        <ol>
-            <li>Call & ask for Ferd</li>
-            <li>Leave a message at the tone</li>
-            <li>Submit a request</li>
-        </ol>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 FERDA FINANCE All rights reserved.</p>
-        <p>Visit the repository at: <a href="https://github.com/PissTech/Ferda-Finance">GitHub Repository</a></p>
-    </footer>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 John Bumbera. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
