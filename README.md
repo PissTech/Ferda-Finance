@@ -1,2 +1,2 @@
     //My portfolio is a work in progress :)
-    © 2025 John Bumbera
+    © 2026 John Bumbera
