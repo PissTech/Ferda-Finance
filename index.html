@@ -30,7 +30,8 @@
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    /* Updated grid to two columns: News (1 part) and Aircraft (4 parts) */
+    grid-template-columns: 1fr 4fr;
     height: calc(100vh - 50px);
   }
 
@@ -109,19 +110,11 @@
 
 <div class="grid">
 
-  <!-- NEWS PANEL -->
   <div class="panel">
     <h2>🌍 Global News Feed</h2>
     <div class="news" id="news"></div>
   </div>
 
-  <!-- SHIP TRACKING -->
-  <div class="panel">
-    <h2>🚢 Ship Tracking (AIS)</h2>
-    <iframe src="https://www.marinetraffic.com/en/ais/home/centerx:0/centery:20/zoom:2"></iframe>
-  </div>
-
-  <!-- AIRCRAFT TRACKING -->
   <div class="panel">
     <h2>✈️ Aircraft Tracking (ADS-B)</h2>
     <iframe src="https://globe.adsbexchange.com/"></iframe>
